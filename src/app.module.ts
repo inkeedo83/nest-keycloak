@@ -12,8 +12,8 @@ import {
   imports: [
     KeycloakConnectModule.register({
       authServerUrl: 'http://localhost:8081',
-      realm: 'VIOLET_REALM',
-      clientId: 'violet-admin',
+      realm: 'myrealm',
+      clientId: 'my-app',
       secret: 'secret',
       // policyEnforcement: PolicyEnforcementMode.PERMISSIVE, // optional
       //tokenValidation: TokenValidation.ONLINE, // optional
