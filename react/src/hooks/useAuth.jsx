@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useRef } from "react";
-import Keycloak from "keycloak-js";
+import React, { useState, useEffect, useRef } from 'react';
+import Keycloak from 'keycloak-js';
 
 const client = new Keycloak({
-  url: "http://127.0.0.1:8081",
-  realm: "myrealm",
-  clientId: "my-app",
+  url: 'http://127.0.0.1:8081',
+  realm: 'myrealm',
+  clientId: 'myapp',
 });
 
 const useAuth = () => {
@@ -18,7 +18,7 @@ const useAuth = () => {
     isRun.current = true;
     client
       .init({
-        onLoad: "login-required",
+        onLoad: 'login-required',
         // redirectUri: `${document.location.origin}/`,
       })
       .then((res) => {

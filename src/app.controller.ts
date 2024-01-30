@@ -5,7 +5,12 @@ export class AppController {
   constructor() {}
 
   @Get()
-  getHello(): string {
-    return 'abc';
+  public(): string {
+    return 'public';
+  }
+
+  @Get()
+  protected(): string {
+    return 'protect';
   }
 }
