@@ -22,4 +22,12 @@ export class JwtAuthGuard extends AuthGuard('jwt') {
   //     console.log({ res });
   //     return !!res;
   //   }
+  ///////////////////////
+  // canActivate(
+  //   context: ExecutionContext,
+  // ): boolean | Promise<boolean> | Observable<boolean> {
+  //   // const user = context.switchToHttp().getRequest().user;
+  //   // console.log(user);
+  //   // return !!user;
+  // }
 }

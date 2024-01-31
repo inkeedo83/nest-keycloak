@@ -7,3 +7,4 @@ export const config = {
     pubkey: env.get('KC_PUBLIC_KEY').required().asString(),
   },
 };
+export const appName = 'myapp';
